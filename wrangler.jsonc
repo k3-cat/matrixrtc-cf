@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "matrixrtc-cf",
+	"main": "./src/index.ts",
+  "compatibility_date": "2026-06-01",
+  "compatibility_flags": [],
+
+  "workers_dev": false,
+
+  "placement": { "mode": "smart" },
+
+  "kv_namespaces": [
+  ],
+
+  "observability": {
+    "traces": {
+      "enabled": true,
+      "destinations": ["grafana-traces"],
+    },
+    "logs": {
+      "enabled": true,
+      "destinations": ["grafana-logs"],
+    },
+  },
+}

@@ -1,0 +1,16 @@
+{
+	"extends": "./tsconfig.json",
+	"include": ["./src/**/*", "./types/**/*.d.ts"],
+	"compilerOptions": {
+		"lib": ["ESNext"],
+		"types": ["vite/client"],
+		"jsx": "react-jsx",
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"composite": true,
+
+		"paths": {
+			"$/*": ["./src/*"]
+		}
+	}
+}
